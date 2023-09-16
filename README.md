@@ -1,6 +1,7 @@
 # Cyclistic-Bikeshare-Analysis
 LINK: https://public.tableau.com/app/profile/trapti.kapkoti/viz/CyclisticBikeshare-acasestudy/Story1
-
+DATA SOUCE: https://divvy-tripdata.s3.amazonaws.com/index.html
+DATA TIMELINE: from AUGUST 2022 to JULY 2023
 ![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/7296b11a-a1ec-4676-ae8c-b9d511e401a9)
 
 ## **DATA ANALYSIS**
