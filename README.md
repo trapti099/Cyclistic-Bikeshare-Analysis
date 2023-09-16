@@ -1,4 +1,7 @@
 # Cyclistic-Bikeshare-Analysis
+LINK: https://public.tableau.com/app/profile/trapti.kapkoti/viz/CyclisticBikeshare-acasestudy/Story1
+
+![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/7296b11a-a1ec-4676-ae8c-b9d511e401a9)
 
 ## **DATA ANALYSIS**
 
@@ -107,6 +110,9 @@ ANALYSIS COMPLETED
 https://public.tableau.com/app/profile/trapti.kapkoti/viz/CyclisticBikeshare-acasestudy/Story1
 
 Here are some snaps from Dashboard:
+
+![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/61aaeb1f-1424-495a-bebf-d59d2f8a9b51)
+![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/60bef6b0-3e36-4dce-af2f-f98ea85fa987)
 
 
 
