@@ -1,4 +1,6 @@
-# Cyclistic Data Analysis README
+# Cyclistic Data Analysis
+
+![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/b95c08fd-0510-4e07-b5fd-751d0a27884c)
 
 Hey there! This analysis is an optional case study from the Google Data Analytics Professional Certificate on Coursera. 📊 Let's dive into it in a more conversational tone and make it super easy to read!
 
