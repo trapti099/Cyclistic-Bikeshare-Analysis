@@ -1,138 +1,109 @@
-# Cyclistic-Bikeshare-Analysis
-LINK: https://public.tableau.com/app/profile/trapti.kapkoti/viz/CyclisticBikeshare-acasestudy/Story1
+# Cyclistic Bikeshare Analysis
 
-DATA SOUCE: https://divvy-tripdata.s3.amazonaws.com/index.html
+**Project Link**: [Cyclistic Bikeshare Analysis on Tableau](https://public.tableau.com/app/profile/trapti.kapkoti/viz/CyclisticBikeshare-acasestudy/Story1)
 
-DATA TIMELINE: from AUGUST 2022 to JULY 2023
+**Data Source**: [Divvy Trip Data](https://divvy-tripdata.s3.amazonaws.com/index.html)
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/7296b11a-a1ec-4676-ae8c-b9d511e401a9)
+**Data Timeline**: August 2022 - July 2023
 
-## **DATA ANALYSIS**
+![Cyclistic Bikeshare](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/7296b11a-a1ec-4676-ae8c-b9d511e401a9)
 
-# Importing Libraries:
+## Data Analysis
 
-The code begins by importing two essential libraries: os and pandas. These libraries provide functions and data structures to work with files and data frames, respectively.
+### Importing Libraries
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/7c003b0e-1e58-4af9-aec0-6fb1a9624ba7)
+To kick things off, we start by importing two crucial libraries: `os` and `pandas`. These libraries provide the necessary tools for handling files and data frames.
 
+![Importing Libraries](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/7c003b0e-1e58-4af9-aec0-6fb1a9624ba7)
 
-Specifying Directory Path and CSV Files:
+### Specifying Directory Path and CSV Files
 
-The directory_path variable specifies the directory where your CSV files are located. You should replace this with the actual path to your CSV files.
+We specify the `directory_path` variable to pinpoint the location of your CSV files. Remember to replace it with the actual path to your CSV files.
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/b6d2d181-2032-4850-b5a8-e6c40bb18390)
+![Specifying Directory](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/b6d2d181-2032-4850-b5a8-e6c40bb18390)
 
-The csv_files list contains the names of the CSV files you want to process. You can add or remove file names as needed.
+The `csv_files` list contains the names of the CSV files you want to process. You can add or remove file names as needed.
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/0c8b5eea-5fb7-46ef-b1e2-7f10983b4324)
+![CSV Files](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/0c8b5eea-5fb7-46ef-b1e2-7f10983b4324)
 
-# Reading and Combining CSV Files:
+### Reading and Combining CSV Files
 
-The code reads each CSV file specified in csv_files, creates a pandas DataFrame for each, and appends them to the dataframes list.
+We read each CSV file specified in `csv_files`, create a pandas DataFrame for each, and then append them to the `dataframes` list.
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/90ec4dbb-9667-4939-96fe-88bc86d15743)
+![Read and Combine CSV Files](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/90ec4dbb-9667-4939-96fe-88bc86d15743)
 
-After looping through all the files, it concatenates these DataFrames into one large DataFrame called combined_df.
+After processing all the files, we concatenate these DataFrames into one large DataFrame called `combined_df`.
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/26756a62-6fa3-453a-896b-e0135ce3e89c)
+![Concatenate DataFrames](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/26756a62-6fa3-453a-896b-e0135ce3e89c)
 
-# Data Inspection and Cleaning:
+### Data Inspection and Cleaning
 
-The code then performs data inspection and cleaning steps. It checks for duplicate records.
+Next, we perform data inspection and cleaning. This involves checking for duplicate records.
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/476b23fa-0e17-4b0b-aee2-9ee12d795f49)
-NO DUPLICATES FOUND
+![Check for Duplicates](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/476b23fa-0e17-4b0b-aee2-9ee12d795f49)
+*No duplicates found*
 
+We also check for null or missing values in the entire DataFrame.
 
-Check for null or missing values in the entire DataFrame
+![Check for Missing Values](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/916b1171-0c22-4c40-9a79-26d9778ae345)
+*These values will be handled later.*
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/916b1171-0c22-4c40-9a79-26d9778ae345)
+Furthermore, we inspect data types and make necessary corrections.
 
-These values will we taken care of later!
+![Check Data Types](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/aa76727d-d35f-430f-9e82-6caa424aa704)
 
-Check Datatypes and later we will change the ones with wrong datatypes
+We also convert date-time columns to the appropriate data type.
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/aa76727d-d35f-430f-9e82-6caa424aa704)
+![Convert Date-Time Columns](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/14a06612-0763-4b51-87c0-76886850732e)
 
-This code converts into date-time Data type
+Finally, we handle missing values by filling them with 'Unknown'.
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/14a06612-0763-4b51-87c0-76886850732e)
+![Handle Missing Values](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/f948587f-63dc-45fb-b431-4f8ff87e15a1)
 
-Handling missing values by filling with 'Unknown'
+### Feature Engineering
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/f948587f-63dc-45fb-b431-4f8ff87e15a1)
+We extract valuable information from the date-time column, such as weekdays, ride length in minutes, and the month.
 
-RESULT
+#### Extracting Weekdays Info
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/9c13c93b-aa0a-4cd0-8e6e-6414b66bb0de)
+![Weekdays Info](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/bb28fac9-d644-4843-8d37-9a778a2b0814)
 
-# Feature Engineering:
+#### Extracting Ride Length Info (in km)
 
-The code extracts information from the date-time column, such as weekdays, ride length in minutes, and month.
+![Ride Length Info](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/9b4f1b00-0479-492e-8630-274755e58450)
 
-EXTRACTING WEEKDAYS INFO
+#### Extracting Month Info
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/bb28fac9-d644-4843-8d37-9a778a2b0814)
+![Month Info](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/b7902dc3-26dc-4d7f-a554-d1a1f1506461)
 
-EXTRACTING RIDE LENGTH in km INFO 
+#### Extracting Time of the Day
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/9b4f1b00-0479-492e-8630-274755e58450)
+![Time of the Day](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/b817950b-d9ce-4b00-8050-ffd1a21611a1)
 
-EXTRACTING MONTH INFO
+### Importing Dask DataFrame for Distance Calculation
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/b7902dc3-26dc-4d7f-a554-d1a1f1506461)
+We introduce a Dask DataFrame derived from the Pandas DataFrame to calculate distances using Geopy.
 
-EXTRACTING TIME OF THE DAY
+![Dask DataFrame](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/1bc977cc-34c3-4abc-8db7-404f53c6c1e4)
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/b817950b-d9ce-4b00-8050-ffd1a21611a1)
+### Distance Calculation with Geopy
 
-# Importing Dask Dataframe for Distance Calculation:
+We define a function called `calculate_distance` for computing distances between latitude and longitude coordinates using the Geopy library.
 
-It creates a Dask DataFrame from the Pandas DataFrame to perform distance calculation using Geopy.
+![Distance Calculation](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/3be89885-deb8-4f80-b973-b67028fd47c3)
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/1bc977cc-34c3-4abc-8db7-404f53c6c1e4)
+Then, we merge the Dask DataFrame back into the original Pandas DataFrame based on an index.
 
-Distance Calculation with Geopy:
+![Merge DataFrames](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/91f3c47c-eeb9-4248-bde4-6a599fc7cbb9)
 
-The code defines a function calculate_distance to calculate distances between latitude and longitude coordinates using the Geopy library. 
+### Saving the Data
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/3be89885-deb8-4f80-b973-b67028fd47c3)
+Finally, we save the combined DataFrame to a CSV file named 'combined_df.csv'.
 
-Merging the Dask DataFrame back into the original Pandas DataFrame based on an index
+![Save Data](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/1946538c-2949-4510-a743-223dd5f3f663)
 
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/91f3c47c-eeb9-4248-bde4-6a599fc7cbb9)
+**Analysis Completed**
 
-# Saving the Data:
+## Visualization on Tableau
 
-Finally, the code saves the combined DataFrame to a CSV file named 'combined_df.csv'.
-
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/1946538c-2949-4510-a743-223dd5f3f663)
-
-ANALYSIS COMPLETED 
-
-## **VISUALIZATION ON TABLEAU**
-https://public.tableau.com/app/profile/trapti.kapkoti/viz/CyclisticBikeshare-acasestudy/Story1
-
-Here are some snaps from Dashboard:
-
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/61aaeb1f-1424-495a-bebf-d59d2f8a9b51)
-![image](https://github.com/trapti099/Cyclistic-Bikeshare-Analysis/assets/63699608/60bef6b0-3e36-4dce-af2f-f98ea85fa987)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Explore the interactive visualizations and insights on [Tableau]([https://public.tableau.com/app/profile/trapti.kapkoti](https://public.tableau.com/app/profile/trapti.kapkoti)
